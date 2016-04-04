@@ -7,4 +7,5 @@ $btn.on('click', function () {
   $lines.addClass('line2');
   $lines.removeClass('lines');
   $engage.addClass('is-engaged');
+  $(this).toggleClass('button');
 });
