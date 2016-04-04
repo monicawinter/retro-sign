@@ -31,6 +31,62 @@ svg {
   cursor: pointer;
 }
 
+.btn path:last-child:hover {
+  fill: #f60;
+}
+
 .lines path {
   stroke-dasharray: 0, 480;
+}
+
+.line2 {
+  animation: line2 1s;
+}
+
+@keyframes line2 {
+
+  0% {
+
+    stroke-dasharray: 0, 480;
+  }
+
+  100% {
+    stroke-dasharray: 480, 480;
+  }
+}
+
+.is-engaged path:nth-child(6) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .5s;
+}
+
+.is-engaged path:nth-child(1) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .5s;
+}
+
+.is-engaged path:nth-child(2) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .75s;
+}
+
+.is-engaged path:nth-child(5) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: .75s;
+}
+
+.is-engaged path:nth-child(3) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+.is-engaged path:nth-child(4) {
+  fill: #f60;
+  transition: all 1s;
+  transition-delay: 1s;
 }
