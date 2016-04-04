@@ -6,6 +6,6 @@ var $engage = $('.engage');
 $btn.on('click', function () {
   $lines.addClass('line2');
   $lines.removeClass('lines');
-  $engage.addClass('is-engaged');
+  $engage.addClass('engaged');
   $(this).toggleClass('button');
 });
