@@ -31,8 +31,21 @@ svg {
   cursor: pointer;
 }
 
-.btn path:last-child: {
+.button path:last-child {
   fill: #f60;
+}
+
+.btn path:last-child:active {
+  transform: scale(1, 1);
+  fill: #f60;
+}
+
+.btn:active {
+  transform: scale(1, 1);
+}
+
+.lines path {
+  stroke-dasharray: 0, 480;
 }
 
 .lines path {
