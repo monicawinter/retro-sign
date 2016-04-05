@@ -4,8 +4,8 @@ var $btn = $('.btn');
 var $engage = $('.engage');
 
 $btn.on('click', function () {
-  $lines.addClass('line2');
-  $lines.removeClass('lines');
-  $engage.addClass('engaged');
+  $lines.toggleClass('line2');
+  $lines.toggleClass('lines');
+  $engage.toggleClass('engaged');
   $(this).toggleClass('button');
 });
