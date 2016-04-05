@@ -31,12 +31,12 @@ svg {
   cursor: pointer;
 }
 
-.button path:last-child {
+.btn path:last-child:active {
+  transform: scale(1, 1);
   fill: #f60;
 }
 
-.btn path:last-child:active {
-  transform: scale(1, 1);
+.button path:last-child {
   fill: #f60;
 }
 
@@ -46,24 +46,21 @@ svg {
 
 .lines path {
   stroke-dasharray: 0, 480;
-  transition: all .5s ease;
 }
 
 .is-pressed path {
-  stroke-dasharray: 480, 480;
+  animation: addlines 1s forwards;
 }
 
-.linify {
-  animation: linify 1s forwards;
-}
-
-@keyframes linify {
+@keyframes addlines {
 
   0% {
+
     stroke-dasharray: 0, 480;
   }
 
   100% {
+
     stroke-dasharray: 480, 480;
   }
 }
