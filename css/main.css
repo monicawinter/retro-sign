@@ -1,111 +1,3 @@
-/*
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
-html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-}
-
-svg {
-  display: block;
-  margin: 0 auto;
-  max-width: 700px;
-  width: 100%;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-.button path:last-child {
-  fill: #f60;
-}
-
-.btn path:last-child:active {
-  transform: scale(1, 1);
-  fill: #f60;
-}
-
-.btn:active {
-  transform: scale(1, 1);
-}
-
-.lines path {
-  stroke-dasharray: 0, 480;
-}
-
-.lines path {
-  stroke-dasharray: 0, 480;
-}
-
-.line2 {
-  animation: line2 1s;
-}
-
-@keyframes line2 {
-
-  0% {
-
-    stroke-dasharray: 0, 480;
-  }
-
-  100% {
-    stroke-dasharray: 480, 480;
-  }
-}
-
-.engaged path:nth-child(6) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: .5s;
-}
-
-.engaged path:nth-child(1) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: .5s;
-}
-
-.engaged path:nth-child(2) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: .75s;
-}
-
-.engaged path:nth-child(5) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: .75s;
-}
-
-.engaged path:nth-child(3) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: 1s;
-}
-
-.engaged path:nth-child(4) {
-  fill: #f60;
-  transition: all 1s;
-  transition-delay: 1s;
-}
-*/
-
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -161,14 +53,13 @@ svg {
   stroke-dasharray: 480, 480;
 }
 
-.is-perssed {
-  animation: lines2 1s;
+.linify {
+  animation: linify 1s forwards;
 }
 
-@keyframes lines2 {
+@keyframes linify {
 
   0% {
-
     stroke-dasharray: 0, 480;
   }
 
