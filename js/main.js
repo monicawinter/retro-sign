@@ -7,4 +7,5 @@ $('svg').on('click', function (e) {
   $('.lines').toggleClass('is-pressed');
   $('.engage').toggleClass('engaged');
   $btn.toggleClass('button');
+  $('svg').toggleClass('is-pressed');
 });
